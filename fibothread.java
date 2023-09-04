@@ -1,15 +1,15 @@
 import java.util.Scanner;
-class fib implements Runnable
+class fibo implements Runnable
 {
-	int n,N,f1=0,f2=1,f3=0;
+	int n,f1=0,f2=1,f3=0;
 	public void run()
 	{
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Enter the limit for fibonacci : ");
-	N=sc.nextInt();
+	n=sc.nextInt();
 	System.out.println("0");
 	System.out.println("1");
-	for(int i=1;i<=N;i++)
+	for(int i=1;i<=n;i++)
 	{
 	f3=f1+f2;
 	System.out.println(f3);
@@ -35,7 +35,7 @@ class ev implements Runnable{
 		}
 	}
 }
-public class fthread
+public class fibothread
 {
 	public static void main(String args[])
 	{
